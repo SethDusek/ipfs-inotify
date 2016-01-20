@@ -5,3 +5,4 @@ authors = ["SethDusek <shibe@openmailbox.org>"]
 
 [dependencies]
 inotify="*"
+getopts="*"
