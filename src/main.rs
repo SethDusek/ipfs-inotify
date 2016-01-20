@@ -12,7 +12,6 @@ use std::ffi::OsStr;
 fn ipfs_add<T: AsRef<OsStr>>(filepath: T) -> Result<String,std::string::FromUtf8Error> {
     let output = Command::new("ipfs")
                 .arg("add")
-                .arg("-n")
                 .arg("-q")
                 .arg(filepath.as_ref())
                 .output()
